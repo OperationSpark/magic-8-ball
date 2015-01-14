@@ -4,12 +4,11 @@ A simple, but magical node cli app demonstrating handling JSON, prompting
 the user for input, simple regular expressions and other basic JavaScript 
 and node features.
 
-- [Help Us Improve](#user-content-help-us-improve)
 - [Installation](#user-content-installation)
-    - [On runnable.com:](#user-content-on-runnablecom)
 - [Lesson Steps](#user-content-lesson-steps)    
 - [Help Us Improve](#user-content-help-us-improve-1)
 - [Other Resources](#user-content-other-resources)
+- [Help Us Improve](#user-content-help-us-improve)
 
 # Help Us Improve
 
@@ -17,16 +16,26 @@ Please help us improve our efforts to help you learn by taking a few moments to 
 
 [Feedback](https://docs.google.com/forms/d/1qW4mF0x-s_d_dBXXBZSHWi1jHWMX-S5ETjqlCEvesWw/viewform?usp=send_form)
 
-# Installation
+## Installation
 
-### On runnable.com:
-Create a new node app, and from the terminal, enter or cut and paste the following commands, then press enter or return:
-    
-    git clone https://github.com/jfraboni/magic-eight-ball.git spark && spark/setup.sh
-    
-...some text will fly by as the repository is cloned locally and the project is setup.
+Create a new Cloud9 workspace and clone the project from github.com:
 
-Great, you're set to roll!
+1. From your Cloud9 Dashboard, find in the upper left corner and click the green button, "Create New Workspace".
+Select "Clone From URL".
+2. In the "Source URL" form input, copy and paste in the following URL:
+
+        https://github.com/OperationSpark/magic-8-ball.git
+
+3. In the environment selection box, select "Node".
+4. Click the green button "Create".
+5. Once the workspace is completed (while spooling up, you'll see a spinning gear on the newly created workspace in the sidebar), click the green button, "Start Editing".
+6. Now, when the workspace is loaded, select the command-line in the bottom window pane, and enter the command `npm install`, then press `Enter`, like this:
+
+<img src="https://raw.githubusercontent.com/OperationSpark/conditional-statements/master/img/npm-install.png">
+
+You'll see some test flying by on the command-line as some required files are installed... and...
+
+Nice, you're in business...
 
 # Lesson Steps
 
