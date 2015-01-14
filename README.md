@@ -20,18 +20,36 @@ Please help us improve our efforts to help you learn by taking a few moments to 
 
 Create a new Cloud9 workspace and clone the project from github.com:
 
-1. From your Cloud9 Dashboard, find in the upper left corner and click the green button, "Create New Workspace".
-Select "Clone From URL".
+1. From your Cloud9 Dashboard, find in the upper left corner and click the green button, "Create New Workspace":
+Select "Clone From URL":
+
+    <img src="https://raw.githubusercontent.com/OperationSpark/using-c9/master/img/clone-new-workspace.png">
+
 2. In the "Source URL" form input, copy and paste in the following URL:
 
         https://github.com/OperationSpark/magic-8-ball.git
 
-3. In the environment selection box, select "Node".
-4. Click the green button "Create".
-5. Once the workspace is completed (while spooling up, you'll see a spinning gear on the newly created workspace in the sidebar), click the green button, "Start Editing".
-6. Now, when the workspace is loaded, select the command-line in the bottom window pane, and enter the command `npm install`, then press `Enter`, like this:
+    <img src="https://raw.githubusercontent.com/OperationSpark/using-c9/master/img/paste-clone-url.png">
 
-<img src="https://raw.githubusercontent.com/OperationSpark/conditional-statements/master/img/npm-install.png">
+3. In the environment selection box, select "Node":
+
+    <img src="https://raw.githubusercontent.com/OperationSpark/using-c9/master/img/select-node-env.png">
+
+4. Click the green button "Create".
+
+    <img src="https://raw.githubusercontent.com/OperationSpark/using-c9/master/img/click-create.png">
+
+5. Wait for the workspace to finish spooling (while spooling up, you'll see a spinning gear on the newly created workspace in the sidebar):
+
+    <img src="https://raw.githubusercontent.com/OperationSpark/using-c9/master/img/workspace-spooling.png">
+
+6. Once the workspace is completed, click the green button, "Start Editing".
+
+    <img src="https://raw.githubusercontent.com/OperationSpark/using-c9/master/img/start-editing.png">
+
+7. Now, when the workspace is loaded, select the command-line in the bottom window pane, and enter the command `npm install`, then press `Enter`, like this:
+
+    <img src="https://raw.githubusercontent.com/OperationSpark/using-c9/master/img/npm-install-magic-8.png">
 
 You'll see some test flying by on the command-line as some required files are installed... and...
 
