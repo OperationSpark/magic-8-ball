@@ -1,0 +1,16 @@
+{
+  "name": "magic-eight-ball",
+  "version": "0.0.2",
+  "description": "A cli game that prompts users to ask the magic eight ball a question",
+  "main": "magic-eight-ball",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OperationSpark/magic-8-ball.git"
+  },
+  "dependencies": {
+    "cli-view": "^1.0.0"
+  },
+  "engines": {
+    "node": "*"
+  }
+}
