@@ -43,7 +43,7 @@ Select "Clone From URL":
 
     <img src="https://raw.githubusercontent.com/OperationSpark/using-c9/master/img/workspace-spooling.png">
 
-6. Once the workspace is completed, click the green button, "Start Editing".
+6. Once the workspace is completed, click the green button, "START EDITING".
 
     <img src="https://raw.githubusercontent.com/OperationSpark/using-c9/master/img/start-editing.png">
 
