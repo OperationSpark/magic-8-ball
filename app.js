@@ -62,7 +62,8 @@ function showResponse(index) {
 
 function quit() {
     // TODO 7 : Show a exit message, then quit the app //
-    
+    console.log(data.msgQuit);
+    process.exit(0);
 }
 
 function randomNumberBetween(min, max)

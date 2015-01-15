@@ -205,6 +205,14 @@ The `return` keyword will cause the app to stop executing any more lines of code
 
 If the user's input is _not_ equal to `q`, the app doesn't execute the line of code containing the `return` statement, and we then call `showResponse()` and show the menu again.
 
+Notice that, _before_ actually invoking the showResponse() method, as an argument to the showResponse() method, we're passing in the result of another invocation, this one to the randomNumberBetween() method, where we ask for a random number between zero (remember, arrays are zero-indexed, so the first element in the responses Array is at index 0) and the last possible index in the responses Array, which we calculate by asking for the length of the Array, minus one.  Why minus one here?  To offset for the fact, as previously mentioned, that arrays are zero indexed, so if we just took the length of the Array as the high end of our range, we'd be out of bounds by one.
+
+Great stuff, but we still need to show the response to the user...
+
+#### TODO 6 : Show The Magic Eight Ball Response
+
+We've randomly selected a number within the range of our responses Array.  We'll now use that number to pull out a response from the responses Array and print it to the screen.  Find **TODO 6**:
+
 ````javascript
 // other code ...
 
@@ -221,6 +229,28 @@ Go ahead and run the app again now:
 <img src="https://raw.githubusercontent.com/OperationSpark/magic-8-ball/master/img/response.png">
 
 Alrighty, this looks more like an app!  Our Magic 8 Ball responds - though don't tell our user we're merely randomly selecting the response!
+
+Ok, one final touch, we need to handle the user's option to _quit_ the app!  Let's implement our `quit()` function.  Find **TODO 7**:
+
+````javascript
+// other code ...
+
+// TODO 7 : Show a exit message, then quit the app //
+console.log(data.msgQuit);
+process.exit(0);
+    
+// other code ...
+````
+
+Here's we're showing the user an exit message, pretty standard UX, and then calling `process.exit()`, which tells Node.js to quit! Passing the value `0` tells bash that the app quit without error. 
+
+**Run the App!**
+
+Super, let's run the app one last time!
+
+<img src="https://raw.githubusercontent.com/OperationSpark/magic-8-ball/master/img/response.png">
+
+Hmm, a good time to quit!  But we have our awesome Magic Eight Ball app!
 
 ## Just The TODOs
 
