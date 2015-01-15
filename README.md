@@ -51,6 +51,8 @@ For our little project, we're gonna build the classic Magic Eight Ball app:  use
 
 This brief app represents the full loop of a user experience: A startup message, being presented with a menu providing options, prompting the user for input, handling that input, and showing the user a response triggered by their input.
 
+As we work through the app, you'll find `// TODO //` notes in our `app.js` file, and _under_ these `TODO` lines is where you'll enter the code we need to type.  It's important you enter the code you need to type for the step under these `TODO` place markers, because code is executed in a particular order.
+
 Note that **this app will run _on the command-line_**, and not in a web browser.
 
 We've put some code in place for you, let's get started...
