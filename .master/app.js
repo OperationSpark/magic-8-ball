@@ -1,40 +1,69 @@
 #!/usr/bin/env node
 
+/*
+ * IMPORT MODULES **************************************************************
+ */
 var 
-    view= require('cli-view'),
-    fs = require('fs'),
-    file = __dirname + '/responses.json',
-    responses = [],
-    menuPrompt = 'Ask the magic eight ball a question (q to quit)',
-    inputValidator = /^[A-Z].+(\?)|q$/,
-    warning = 'Whoa now, that doesn\'t seem like a proper question:\n\
-        We must be polite to the magic eight ball!\n\
-        Please make certain you start your question with a capital \
-        and end it with a question mark.\n\
-        For example, \"Will I win the lottery?\". Try again.',
-    welcomeMessage = 'Magic Eight Ball',
+    _ = require('lodash'),
+    view = require('cli-view'),
     
+    // TODO 1 import our data //
+    data = require('./data.json');
+    
+
+/*
+ * VARIABLE DECLARATION ********************************************************
+ */
+var 
+    inputValidator,
+    responses,
+    menu;
+
+/*
+ * INITIALIZATION **************************************************************
+ */
+init();
+start(data.msgWelcome);
+
+function init() {
+    inputValidator = /^[A-Z].+(\?)|q$/;
+    
+    // TODO 2 : Use the lodash pluck API to pull out all magic 8 ball responses //
+    responses = _.pluck(data.responses, 'text');
+    
+    // TODO 3 : Using our loaded data, create the game menu //
     menu = view
-        .makeMenu(menuPrompt, inputValidator, warning)
-        .onInput(function (input) {
-            if (input === "q") return quit();
-            showResponse(randomNumberBetween(0, responses.length-1));
-            menu.show();
-        });
-    
-console.log(welcomeMessage);
+        .makeMenu(data.msgMenuPrompt, inputValidator, data.msgWarning)
+        .onInput(handleInput);
+}
 
-fs.readFile(file, 'utf8', function (err, data) {
-  if (err) { return onErr(err); }
-  data = JSON.parse(data);
-  for (var index in data.responses) {
-      responses.push(data.responses[index].value);
-  }
-  menu.show();
-});
 
+/*
+ * APPLICATION *****************************************************************
+ */
+ 
+function start(welcomeMessage) {
+    // TODO 4 : Show the welcome message, followed by the menu //
+    console.log(welcomeMessage);
+    menu.show();
+}
+
+function handleInput(input) {
+    // TODO 4 : Handle the user's input from the menu prompt //
+    if (input === "q") return quit();
+    showResponse(randomNumberBetween(0, responses.length-1));
+    menu.show();
+}
+
+// TODO 5 : Pull out a random response from the Array of responses //
 function showResponse(index) {
-	console.log('The Magic Eight Ball responds: ' + responses[index]);
+    console.log(data.msgResponsePrefix + responses[index]);
+}
+
+function quit() {
+    // TODO 6 : Show a exit message, then quit the app //
+    console.log(data.msgQuit);
+    process.exit(0);
 }
 
 function randomNumberBetween(min, max)
@@ -42,23 +71,7 @@ function randomNumberBetween(min, max)
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-function quit() {
-  console.log('Thanks for using The Magic Eight Ball!');
-  process.exit(0);
-}
-
 function onErr(err) {
 	console.log(err);
 	return 1;
 }
-
-
-            // switch (input) {
-            //   case "q":
-            //     quit();
-            //     break;
-            //   default:
-            //     showResponse(randomNumberBetween(0, responses.length-1));
-            //     menu.show();
-            //     break;
-            // }
