@@ -8,6 +8,7 @@ A simple, but magical Node.js cli app demonstrating loading external data, leani
   - [Installation](#installation)
   - [Overview](#overview)
     - [Specs](#specs)
+    - [Take Away](#take-away)
     - [Entering Code](#entering-code)
     - [Type of App : CLI](#type-of-app--cli)
   - [Lesson Steps](#lesson-steps)
@@ -78,7 +79,22 @@ Nice, you're in business...
 
 For our little project, we're gonna build the classic Magic Eight Ball app:  users will be able to ask the Magic Eight Ball a question about the future and the Magic Eight Ball will respond.
 
-This brief app represents the full loop of a user experience: A startup message, being presented with a menu providing options, prompting the user for input, handling that input, and showing the user a response triggered by their input.
+### Take Away
+
+This brief app represents the life-cycle of a typical app, and demonstrates the full loop of a user experience: A startup message, being presented with a menu providing options, prompting the user for input, handling that input, and showing the user a response triggered by their input.
+
+Some concepts you'll learn are:
+
+* Programming a command-line app.
+* The structure of a typical app.
+* Built-in and 3rd party API.
+* Loading external data.
+* Variable declaration and initialization.
+* Function declaration and invocation, passing arguments to functions.
+* Prompting a user for and handling user input.
+* Conditional statements - making decisions in code.
+* Simple regular expressions applied to input validation.
+* Random number generation.
 
 ### Entering Code
 
