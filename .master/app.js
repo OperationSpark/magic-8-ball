@@ -5,11 +5,14 @@
  */
 var 
     _ = require('lodash'),
-    view = require('cli-view'),
+    view = require('cli-view');
     
-    // TODO 1 import our data //
-    data = require('./data.json');
-    
+/*
+ * LOAD DATA *******************************************************************
+ */
+// TODO 1 : Load our data //
+var data = require('./data.json');
+
 
 /*
  * VARIABLE DECLARATION ********************************************************

@@ -244,7 +244,7 @@ process.exit(0);
 // other code ...
 ````
 
-Here's we're showing the user an exit message, pretty standard UX, and then calling `process.exit()`, which tells Node.js to quit! Passing the value `0` tells bash that the app quit without error. 
+Here, we're showing the user an exit message, pretty standard UX, and then calling `process.exit()`, which tells Node.js to quit! Passing the value `0` tells bash that the app quit without error. 
 
 **Run the App!**
 
