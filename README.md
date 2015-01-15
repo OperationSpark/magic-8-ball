@@ -38,7 +38,7 @@ Select "Clone From URL":
 
 7. Now, when the workspace is loaded, select the command-line in the bottom window pane, and enter the command `npm install`, then press `Enter`, like this:
 
-    <img src="https://raw.githubusercontent.com/OperationSpark/using-c9/master/img/npm-install-magic-8.png">
+    <img src="https://raw.githubusercontent.com/OperationSpark/magic-8-ball/master/img/npm-install-magic-8.png">
 
 You'll see some test flying by on the command-line as some required files are installed... and...
 
@@ -47,13 +47,32 @@ Nice, you're in business...
 
 ## Lesson Steps
 
+### Specs
+
 For our little project, we're gonna build the classic Magic Eight Ball app:  users will be able to ask the Magic Eight Ball a question about the future and the Magic Eight Ball will respond.
 
 This brief app represents the full loop of a user experience: A startup message, being presented with a menu providing options, prompting the user for input, handling that input, and showing the user a response triggered by their input.
 
+### Entering Code
+
 As we work through the app, you'll find `// TODO //` notes in our `app.js` file, and _under_ these `TODO` lines is where you'll enter the code we need to type.  It's important you enter the code you need to type for the step under these `TODO` place markers, because code is executed in a particular order.
 
+So, to comlete a lesson step, _find_ the `TODO` place marker in the appropriate JavaScript file:
+
+<img src="https://raw.githubusercontent.com/OperationSpark/using-c9/master/img/find-todo.png">
+
+...then put your cursor on the line below the `TODO`, and enter the code from the current lesson step:
+
+<img src="https://raw.githubusercontent.com/OperationSpark/using-c9/master/img/todo-done.png">
+
+Sweet!
+
+### Type of App : CLI
+
 Note that **this app will run _on the command-line_**, and not in a web browser.
+
+
+### Get Started
 
 We've put some code in place for you, let's get started...
 
