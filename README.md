@@ -2,8 +2,36 @@ Magic Eight Ball
 =======================
 A simple, but magical Node.js cli app demonstrating loading external data, leaning on 3rd party API, prompting the user for input, simple regular expressions, random number generation, and other basic JavaScript and Node.js features.
 
-- [Installation](#user-content-installation)
-- [Lesson Steps](#user-content-lesson-steps)    
+**Table of Contents**
+
+- [Magic Eight Ball](#magic-eight-ball)
+  - [Installation](#installation)
+  - [Overview](#overview)
+    - [Specs](#specs)
+    - [Entering Code](#entering-code)
+    - [Type of App : CLI](#type-of-app--cli)
+  - [Lesson Steps](#lesson-steps)
+    - [Initializing an App](#initializing-an-app)
+      - [API : Batteries Included](#api--batteries-included)
+      - [Data](#data)
+      - [TODO 1 : Import Data](#todo-1--import-data)
+      - [Variables](#variables)
+      - [TODO 2 : Pluck the Response Data](#todo-2--pluck-the-response-data)
+      - [TODO 3 : Create the App Menu](#todo-3--create-the-app-menu)
+    - [Implementing the App](#implementing-the-app)
+      - [TODO 4 : Implement the Start Function](#todo-4--implement-the-start-function)
+      - [TODO 5 : Handle User Input](#todo-5--handle-user-input)
+      - [TODO 6 : Show The Magic Eight Ball Response](#todo-6--show-the-magic-eight-ball-response)
+      - [TODO 7 : Implement Quitting](#todo-7--implement-quitting)
+  - [Just Code TODOs](#just-code-todos)
+    - [TODO 1 : Import Data](#todo-1--import-data-1)
+    - [TODO 2 : Pluck the Response Data](#todo-2--pluck-the-response-data-1)
+    - [TODO 3 : Create the App Menu](#todo-3--create-the-app-menu-1)
+    - [TODO 4 : Implement the Start Function](#todo-4--implement-the-start-function-1)
+    - [TODO 5 : Handle User Input](#todo-5--handle-user-input-1)
+    - [TODO 6 : Show The Magic Eight Ball Response](#todo-6--show-the-magic-eight-ball-response-1)
+    - [TODO 7 : Implement Quitting](#todo-7--implement-quitting-1)
+  - [Just Code TODOs in Google Presentation](#just-code-todos-in-google-presentation)
 
 ## Installation
 
@@ -44,8 +72,7 @@ You'll see some test flying by on the command-line as some required files are in
 
 Nice, you're in business...
 
-
-## Lesson Steps
+## Overview
 
 ### Specs
 
@@ -57,7 +84,7 @@ This brief app represents the full loop of a user experience: A startup message,
 
 As we work through the app, you'll find `// TODO //` notes in our `app.js` file, and _under_ these `TODO` lines is where you'll enter the code we need to type.  It's important you enter the code you need to type for the step under these `TODO` place markers, because code is executed in a particular order.
 
-So, to comlete a lesson step, _find_ the `TODO` place marker in the appropriate JavaScript file:
+So, to complete a lesson step, _find_ the `TODO` place marker in the appropriate JavaScript file:
 
 <img src="https://raw.githubusercontent.com/OperationSpark/using-c9/master/img/find-todo.png">
 
@@ -72,7 +99,7 @@ Sweet!
 Note that **this app will run _on the command-line_**, and not in a web browser.
 
 
-### Get Started
+## Lesson Steps
 
 We've put some code in place for you, let's get started...
 
@@ -89,7 +116,7 @@ Starting up an application often takes a few steps of:
 * Initializing some variables for use in our app.
 
 #### API : Batteries Included
-Built-in and 3rd party libraries of code, often called modules in JavaScript, are pre-written code that provide programmers with a lot of powerful programming features.  By using them, programmers don't have to reinvent the wheel each time they write a program and get a huge head-start on the amount of time it takes to produce appliations.
+Built-in and 3rd party libraries of code, often called modules in JavaScript, are pre-written code that provide programmers with a lot of powerful programming features.  By using them, programmers don't have to reinvent the wheel each time they write a program and get a huge head-start on the amount of time it takes to produce applications.
 
 To use these modules or libraries of code, developers _only_ need to know the module's API - Application Programming Interface.  That means, we need to know what inputs to provide to get the output or behaviour we want.  This is a powerful concept, because we don't need to know how this library functions on the inside, only how to use it.  It's similar to the fact that you don't need to know how to build a fuel-injection system, or even how they work, to be able to start and drive a car.  We're leaning on the powerful minds and work of others.
 
@@ -171,7 +198,7 @@ menu = view
 
 // other code...
 ````
-The menu API uses a technique called method chaining, which allows us to make several configuration API calls at the same time, seperating each with the `.` dot.  By this, we're able to setup several things on our menu in one statement.
+The menu API uses a technique called method chaining, which allows us to make several configuration API calls at the same time, separating each with the `.` dot.  By this, we're able to set-up several things on our menu in one statement.
 
 Using the `makeMenu` API, we pass all the things required to make our menu: a message to prompt the user, the input validator we discussed above, and a message to warn the user if they provide invalid input.
 
@@ -179,16 +206,20 @@ Next, we use the `onInput` API to register for and handle the `input` event: Our
 
 This is a powerful concept in programming, generally referred to as a _callback_ function, where we pass a function to another process to be _called_ at a later time.
 
+### Implementing the App
+
 #### TODO 4 : Implement the Start Function
 
 Ok, one more step before we run our app the first time.  Let's implement our start method, which we'll invoke _after_ initializing our variables.  Find **TODO 4**:
 
 ````javascript
-function start(welcomeMessage) {
-    // TODO 4 : Show the welcome message, followed by the menu //
-    console.log(welcomeMessage);
-    menu.show();
-}
+// other code...
+
+// TODO 4 : Show the welcome message, followed by the menu //
+console.log(welcomeMessage);
+menu.show();
+    
+// other code...
 ````
 
 Here we're showing the user a welcome message, and presenting them with a menu, standard stuff when booting up an app.
@@ -200,13 +231,13 @@ Like this:
 
 <img src="https://raw.githubusercontent.com/OperationSpark/magic-8-ball/master/img/run-from-bash.png">
 
-You'll notice you can ask a question, but there's no response and the app just quits immediately, so we've got some work to do.  But our validator works!  Try asking a question with a lower case letter or entering numbers first?
+You'll notice you can ask a question, but there's no response and the app just quits immediately, so we've got some work to do.  But our validator works!  Try asking a question with a lowercase letter or entering numbers first?
 
 <img src="https://raw.githubusercontent.com/OperationSpark/magic-8-ball/master/img/validator.png">
 
 Cool!  Let's move on!
 
-#### TODO 5 Handle User Input
+#### TODO 5 : Handle User Input
 
 Our app quits if we do not handle valid input for the user, so let's go ahead and implement the function `handleInput()`.  Find **TODO 5**:
 
@@ -220,6 +251,7 @@ menu.show();
 
 // other code...
 ````
+
 Intersting, we use a <a href="https://github.com/OperationSpark/javascript-wiki/wiki/Conditional-Statements" target="_blank">conditional statement</a> to first check if the user has entered the letter `q`.  If they have, we execute the line of code `return quit();`.
 
 The `return` keyword will cause the app to stop executing any more lines of code _within_ the `handleInput()` function, and _return early_.  This should allow us to quit the app.
@@ -251,6 +283,8 @@ Go ahead and run the app again now:
 
 Alrighty, this looks more like an app!  Our Magic 8 Ball responds - though don't tell our user we're merely randomly selecting the response!
 
+#### TODO 7 : Implement Quitting
+
 Ok, one final touch, we need to handle the user's option to _quit_ the app!  Let's implement our `quit()` function.  Find **TODO 7**:
 
 ````javascript
@@ -273,7 +307,9 @@ Super, let's run the app one last time!
 
 Hmm, a good time to quit!  But we have our awesome Magic Eight Ball app!
 
-## Just The TODOs
+***
+
+## Just Code TODOs
 
 ### TODO 1 : Import Data
 
@@ -285,5 +321,83 @@ data = require('./data.json');
 
 // other code...
 ````
+
+### TODO 2 : Pluck the Response Data
+
+````javascript
+// other code...
+
+// TODO 2 : Use the lodash pluck API to pull out all magic 8 ball responses //
+responses = _.pluck(data.responses, 'text');
+
+// other code...
+````
+
+### TODO 3 : Create the App Menu
+
+````javascript
+// other code...
+
+// TODO 3 : Using our loaded data, create the game menu //
+menu = view
+    .makeMenu(data.msgMenuPrompt, inputValidator, data.msgWarning)
+    .onInput(handleInput);
+
+// other code...
+````
+
+### TODO 4 : Implement the Start Function
+
+````javascript
+// other code...
+
+// TODO 4 : Show the welcome message, followed by the menu //
+console.log(welcomeMessage);
+menu.show();
+    
+// other code...
+````
+
+### TODO 5 : Handle User Input
+
+Our app quits if we do not handle valid input for the user, so let's go ahead and implement the function `handleInput()`.  Find **TODO 5**:
+
+````javascript
+// other code ...
+
+// TODO 5 : Handle the user's input from the menu prompt //
+if (input === "q") return quit();
+showResponse(randomNumberBetween(0, responses.length-1));
+menu.show();
+
+// other code...
+````
+
+### TODO 6 : Show The Magic Eight Ball Response
+
+````javascript
+// other code ...
+
+// TODO 6 : Pull out a random response from the Array of responses //
+console.log(data.msgResponsePrefix + responses[index]);
+
+// other code ...
+````
+
+### TODO 7 : Implement Quitting
+
+````javascript
+// other code ...
+
+// TODO 7 : Show a exit message, then quit the app //
+console.log(data.msgQuit);
+process.exit(0);
+    
+// other code ...
+````
+
+## Just Code TODOs in Google Presentation
+
+<a href="https://docs.google.com/presentation/d/1Dy8eeV5X0UxDyuqTS-n0IIcxK8qR7-z1N_Ite1C5j7k/edit?usp=sharing" target="_blank">Code Presentation</a>
 
 &copy; Operation Spark 2015

@@ -1,4 +1,4 @@
- {
+{
   "msgWelcome": "Welcome to The Magic Eight Ball!",
   "msgMenuPrompt": "Ask the magic eight ball a question (q to quit)",
   "msgWarning": "Whoa now, that doesn't seem like a proper question:\nWe must be polite to the magic eight ball!\nPlease make certain you start your question with a capital letter and end it with a question mark.\nFor example, \"Will I win the lottery?\". Try again.",
