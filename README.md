@@ -199,9 +199,11 @@ menu.show();
 
 // other code...
 ````
-Intersting, we use a <a href="https://github.com/OperationSpark/javascript-wiki/wiki/Conditional-Statements" target="_blank">conditional statement</a> to first check if the user has enter the letter `q`, use the `return` keyword, then call the quit() function.  The `return` keyword will cause the app to stop executing any more lines of code within the `handleInput` function, and _return early_.  This should allow us to quit the app.
+Intersting, we use a <a href="https://github.com/OperationSpark/javascript-wiki/wiki/Conditional-Statements" target="_blank">conditional statement</a> to first check if the user has entered the letter `q`, use the `return` keyword, then call the quit() function.
 
-If the input is not equal to `q`, the app doesn't execute the line of code containing the `return` statement, and we then call     `showResponse()` and show the menu again.
+The `return` keyword will cause the app to stop executing any more lines of code _within_ the `handleInput` function, and _return early_.  This should allow us to quit the app.
+
+If the input is _not_ equal to `q`, the app doesn't execute the line of code containing the `return` statement, and we then call     `showResponse()` and show the menu again.
 
 ````javascript
 // other code ...
