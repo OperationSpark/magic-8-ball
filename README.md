@@ -175,9 +175,15 @@ Here we're showing the user a welcome message, and presenting them with a menu, 
 
 Alrighty, let's try to run the app and see what happens.  To run the app, select the bash command-line in the Console View (the bottom window pane in Cloud9) and enter the command: `./app.js`
 
- <img src="https://raw.githubusercontent.com/OperationSpark/using-c9/master/img/run-by-bash.png">
+Like this:
 
+<img src="https://raw.githubusercontent.com/OperationSpark/opspark-magic-8-node/master/img/run-from-bash.png">
 
+You'll notice you can ask a question, but there's no response and the app just quits immediately, so we've got some work to do.  But our validator works!  Try asking a question with a lower case letter or entering numbers first?
+
+<img src="https://raw.githubusercontent.com/OperationSpark/opspark-magic-8-node/master/img/validator.png">
+
+Cool!  Let's move on!
 
 ## Just TODOs
 
