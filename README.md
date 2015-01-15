@@ -187,14 +187,17 @@ Cool!  Let's move on!
 
 #### TODO 5 Handle User Input
 
-Our app quits if we do not handle valid input for the user, so let's go ahead and implement the function `handleInput`.  Find **TODO 5**:
+Our app quits if we do not handle valid input for the user, so let's go ahead and implement the function `handleInput()`.  Find **TODO 5**:
 
 ````javascript
 // other code ...
+
 // TODO 5 : Handle the user's input from the menu prompt //
 if (input === "q") return quit();
 showResponse(randomNumberBetween(0, responses.length-1));
 menu.show();
+
+// other code...
 ````
 Intersting, we a <a href="https://github.com/OperationSpark/javascript-wiki/wiki/Conditional-Statements" target="_blank">conditional statement</a> to first check if the user has enter the letter `q`, use the `return` keyword, then call the quit() function.  The `return` keyword will cause the app to stop executing any more lines of code within the `handleInput` function, and _return early_.  This should allow us to quit the app.
 
