@@ -136,7 +136,7 @@ Built-in and 3rd party libraries of code, often called modules in JavaScript, ar
 
 This practice follows the DRY principle of programming: Don't Repeat Yourself!  There's no need to waste time on writing functionality when there's good and open source code that serves your purposes.
 
-To use these modules or libraries of code, developers _only_ need to know the module's API - Application Programming Interface.  That means, we need to know what inputs to provide to get the output or behaviour we want.  This is a powerful concept, because we don't need to know how this library functions on the inside, only how to use it.  In short, with an API, you're on a _need to know_ basis.  It's similar to the fact that you don't need to know how to build a fuel-injection system, or even how they work, to be able to start and drive a car.  We're leaning on the powerful minds and work of others.
+To use these modules or libraries of code, developers _only_ need to know the module's API - Application Programming Interface.  That means, we need to know what inputs to provide to get the output or behaviour we want.  This is a powerful concept, because we don't need to know how a library functions on the inside, only how to use its API.  In short, with an API, you're on a _need to know_ basis.  It's similar to the fact that you don't need to know how to build a fuel-injection system, or even how they work, to be able to start and drive a car.  We're leaning on the powerful minds and work of others.
 
 You'll see at the top of our `app.js` file, we've imported a few useful modules:
 
