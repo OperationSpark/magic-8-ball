@@ -49,17 +49,19 @@ function start(welcomeMessage) {
 }
 
 function handleInput(input) {
-    // TODO 4 : Handle the user's input from the menu prompt //
-    
+    // TODO 5 : Handle the user's input from the menu prompt //
+    if (input === "q") return quit();
+    showResponse(randomNumberBetween(0, responses.length-1));
+    menu.show();
 }
 
-// TODO 5 : Pull out a random response from the Array of responses //
 function showResponse(index) {
-    
+    // TODO 6 : Pull out a random response from the Array of responses //
+    console.log(data.msgResponsePrefix + responses[index]);
 }
 
 function quit() {
-    // TODO 6 : Show a exit message, then quit the app //
+    // TODO 7 : Show a exit message, then quit the app //
     
 }
 

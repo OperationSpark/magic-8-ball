@@ -185,7 +185,39 @@ You'll notice you can ask a question, but there's no response and the app just q
 
 Cool!  Let's move on!
 
-## Just TODOs
+#### TODO 5 Handle User Input
+
+Our app quits if we do not handle valid input for the user, so let's go ahead and implement the function `handleInput`.  Find **TODO 5**:
+
+````javascript
+// other code ...
+// TODO 5 : Handle the user's input from the menu prompt //
+if (input === "q") return quit();
+showResponse(randomNumberBetween(0, responses.length-1));
+menu.show();
+````
+Intersting, we a <a href="https://github.com/OperationSpark/javascript-wiki/wiki/Conditional-Statements" target="_blank">conditional statement</a> to first check if the user has enter the letter `q`, use the `return` keyword, then call the quit() function.  The `return` keyword will cause the app to stop executing any more lines of code within the `handleInput` function, and _return early_.  This should allow us to quit the app.
+
+If the input is not equal to `q`, the app doesn't execute the line of code containing the `return` statement, and we then call     `showResponse()` and show the menu again.
+
+````javascript
+// other code ...
+
+// TODO 6 : Pull out a random response from the Array of responses //
+console.log(data.msgResponsePrefix + responses[index]);
+
+// other code ...
+````
+
+**Run the App!**
+
+Go ahead and run the app again now:
+
+<img src="https://raw.githubusercontent.com/OperationSpark/magic-8-ball/master/img/response.png">
+
+Alrighty, this looks more like an app!  Our Magic 8 Ball responds - though don't tell our user we're merely randomly selecting the response!
+
+## Just The TODOs
 
 ### TODO 1 : Import Data
 
