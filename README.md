@@ -87,7 +87,7 @@ Some concepts you'll learn are:
 
 * Programming a command-line app.
 * The structure of a typical app.
-* Built-in and 3rd party API.
+* Leveraging the power of built-in and 3rd party API (DRY)
 * Loading external data.
 * Variable declaration and initialization.
 * Function declaration and invocation, passing arguments to functions.
@@ -134,7 +134,9 @@ Starting up an application often takes a few steps of:
 #### API : Batteries Included
 Built-in and 3rd party libraries of code, often called modules in JavaScript, are pre-written code that provide programmers with a lot of powerful programming features.  By using them, programmers don't have to reinvent the wheel each time they write a program and get a huge head-start on the amount of time it takes to produce applications.
 
-To use these modules or libraries of code, developers _only_ need to know the module's API - Application Programming Interface.  That means, we need to know what inputs to provide to get the output or behaviour we want.  This is a powerful concept, because we don't need to know how this library functions on the inside, only how to use it.  It's similar to the fact that you don't need to know how to build a fuel-injection system, or even how they work, to be able to start and drive a car.  We're leaning on the powerful minds and work of others.
+This practice follows the DRY principle of programming: Don't Repeat Yourself!  There's no need to waste time on writing functionality when there's good and open source code that serves your purposes.
+
+To use these modules or libraries of code, developers _only_ need to know the module's API - Application Programming Interface.  That means, we need to know what inputs to provide to get the output or behaviour we want.  This is a powerful concept, because we don't need to know how this library functions on the inside, only how to use it.  In short, with an API, you're on a _need to know_ basis.  It's similar to the fact that you don't need to know how to build a fuel-injection system, or even how they work, to be able to start and drive a car.  We're leaning on the powerful minds and work of others.
 
 You'll see at the top of our `app.js` file, we've imported a few useful modules:
 
