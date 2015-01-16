@@ -167,7 +167,7 @@ Let's import our external data.  Find **TODO**, and import our app's data:
 // other code...
 
 // TODO 1 import our data //
-data = require('./data.json');
+var data = require('./data.json');
 
 // other code...
 ````
@@ -335,7 +335,7 @@ Hmm, a good time to quit!  But we have our awesome Magic Eight Ball app!
 // other code...
 
 // TODO 1 import our data //
-data = require('./data.json');
+var data = require('./data.json');
 
 // other code...
 ````
